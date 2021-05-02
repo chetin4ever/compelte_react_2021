@@ -1,4 +1,6 @@
 import "./App.css"
+import Home from "./Home"
+import Navbar from "./Navbar"
 
 function App() {
   const title = "Welcome to new blog"
@@ -10,17 +12,9 @@ function App() {
   const link = "http://www.google.com"
   return (
     <div className='App'>
+      <Navbar />
       <div className='content'>
-        {/* printing javascript */}
-        <h1>{title}</h1>
-        <p>likes {likes}</p>
-        {/* can't print oobject directly */}
-        {/* {person}   */} {/* not valid */}
-        {person.name}
-        <p>{Math.random() * 10}</p>
-        <p>[1,2,3,4,5]</p>
-        {/* dyanamic link */}
-        <a href={link}>google site</a>
+        <Home />
       </div>
     </div>
   )
